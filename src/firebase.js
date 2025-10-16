@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCruWEoZigW8gdjV8wMF1EpmXLSkecfsCE",
-  authDomain: "kanvas-7b8a1.firebaseapp.com",
-  projectId: "kanvas-7b8a1",
-  storageBucket: "kanvas-7b8a1.firebasestorage.app",
-  messagingSenderId: "1051605502455",
-  appId: "1:1051605502455:web:981ec34d11b10ec65c06f2",
-  measurementId: "G-XC4Q17KXJF"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
